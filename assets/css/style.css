@@ -1088,3 +1088,8 @@ h1 span {
   display: flex;
   justify-content: space-around;
 }
+
+.link{
+  text-decoration: none;
+  color: white;
+}
