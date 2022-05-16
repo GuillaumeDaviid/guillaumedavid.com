@@ -14,8 +14,7 @@
 }
 
 .block_articles {
-  min-width: 23vw;
-  margin-left: 20px;
+  min-width: 25vw;
 }
 
 .listArticle {
@@ -31,10 +30,12 @@
 }
 
 #next, #previous {
+  z-index: 99;
+  position: absolute;
   cursor: pointer;
   height: 100%;
-  position: absolute;
   color: black;
   border-color: grey;
   background: rgba(255, 255, 255, .5);
+  width: 30px;
 }

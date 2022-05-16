@@ -1,5 +1,4 @@
-let min = 0;
-let max = 3;
+p = 0;
 
 const articles = document.getElementById('articles');
 const list = document.getElementById('listArticle');
@@ -29,10 +28,20 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gui
     block.appendChild(newTitle);
     list.appendChild(block);
   };
-  console.log(response.items[0].categories[0]);
-});
 
-document.getElementById('next').addEventListener('click', function(){
-  list.style.transform = "translate(-23.5vw)";
-  list.style.transition = "all 0.5s ease";
-})
+  document.getElementById('next').addEventListener('click', function(){
+    if (p>-(response.items.length-4)){
+    p--;
+    list.style.transform = "translate("+p*25+"vw)";
+    list.style.transition = "all 0.5s ease";
+  }
+  })
+
+  document.getElementById('previous').addEventListener('click', function(){
+    if (p < 0){
+    p++;
+    list.style.transform = "translate("+p*25+"vw)";
+    list.style.transition = "all 0.5s ease";
+  }
+  })
+});
