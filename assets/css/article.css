@@ -1,5 +1,6 @@
 .articles {
-  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .img_block-articles {
@@ -13,6 +14,27 @@
 }
 
 .block_articles {
-  min-width: 300px;
+  min-width: 23vw;
   margin-left: 20px;
+}
+
+.listArticle {
+  display: flex;
+}
+
+#next {
+  right: 0vw;
+}
+
+#previous {
+  left: 0vw;
+}
+
+#next, #previous {
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  color: black;
+  border-color: grey;
+  background: rgba(255, 255, 255, .5);
 }
