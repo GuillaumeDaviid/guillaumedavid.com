@@ -89,11 +89,12 @@ else
 	$email   = (isset($_POST['user_mail']))   ? Rec($_POST['user_mail'])   : '';
 	/*$objet   = (isset($_POST['objet']))   ? Rec($_POST['objet'])   : ''; */
 	$message = (isset($_POST['user_message'])) ? Rec($_POST['user_message']) : '';
+	$objet = "Contact guillaumedavid.com";
 
 	// On va vérifier les variables et l'email ...
 	$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
 
-	if (($nom != '') && ($email != '') && ($objet != '') && ($message != ''))
+	if (($nom != '') && ($email != '') && ($message != ''))
 	{
 		// les 4 variables sont remplies, on génère puis envoie le mail
 		$headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -137,19 +138,19 @@ else
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
 			echo '<p>'.$message_envoye.'</p>';
-			header("Refresh: 1;URL=../index.html");
+			header("Refresh: 1;URL=../../index.html");
 		}
 		else
 		{
 			echo '<p>'.$message_non_envoye.'</p>';
-			header("Refresh: 1;URL=../index.html");
+			header("Refresh: 5;URL=../../index.html");
 		};
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="guillaumedavid.com">Retour au formulaire</a></p>'."\n";
-		header("Refresh: 1;URL=../index.html");
+		echo '<p>'.$message_formulaire_invalide.' <a href="../../index.html">Retour au formulaire</a></p>'."\n";
+		header("Refresh: 5;URL=../../index.html");
 	};
 }; // fin du if (!isset($_POST['envoi']))
 };
