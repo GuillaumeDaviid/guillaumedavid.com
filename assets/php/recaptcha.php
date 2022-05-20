@@ -137,19 +137,19 @@ else
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
 			echo '<p>'.$message_envoye.'</p>';
-			header("Refresh: 1;URL=../index.html");
+			header("Refresh: 1;URL=../../index.html");
 		}
 		else
 		{
 			echo '<p>'.$message_non_envoye.'</p>';
-			header("Refresh: 1;URL=../index.html");
+			header("Refresh: 1;URL=../../index.html");
 		};
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.' <a href="guillaumedavid.com">Retour au formulaire</a></p>'."\n";
-		header("Refresh: 1;URL=../index.html");
+		echo '<p>'.$message_formulaire_invalide.' <a href="../../index.html">Retour au formulaire</a></p>'."\n";
+		header("Refresh: 10;URL=../../index.html");
 	};
 }; // fin du if (!isset($_POST['envoi']))
 };
