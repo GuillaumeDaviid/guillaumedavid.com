@@ -20,7 +20,7 @@ fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gui
       newA.href = response.items[i].link;
       newA.target = '_blank';
       newA.classList.add('link-article')
-      block.classList.add('block_articles');
+      block.classList.add('block-articles');
       block.id = i;
       const newTitle = document.createElement('h3');
       newTitle.appendChild(newA);
