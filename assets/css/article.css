@@ -21,6 +21,20 @@
   display: flex;
 }
 
+.more {
+  font-weight: 900;
+}
+
+.block_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25vw;
+  max-width: 200px;
+  max-height: 100px;
+  margin-top: 5vh;
+}
+
 #next {
   right: 0vw;
 }

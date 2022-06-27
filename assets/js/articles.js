@@ -28,9 +28,19 @@ fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@gui
     block.appendChild(newTitle);
     list.appendChild(block);
   };
+  const more = document.createElement('a');
+  const container = document.createElement('div');
+  container.classList.add('block_more');
+  more.href = "https://medium.com/@guillaumedaavid";
+  more.classList.add('more')
+  more.target = "_blank";
+  more.textContent = "Voir plus d'articles ->";
+  container.appendChild(more);
+  list.appendChild(container);
+
 
   document.getElementById('next').addEventListener('click', function(){
-    if (p>-(response.items.length-4)){
+    if (p>-(response.items.length-3)){
     p--;
     list.style.transform = "translate("+p*25+"vw)";
     list.style.transition = "all 0.5s ease";
