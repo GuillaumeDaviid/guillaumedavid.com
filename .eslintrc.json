@@ -1,0 +1,16 @@
+{
+  "parseOptions" : {
+    "echoVersion" : 2022,
+    "sourceType" : "module"
+  },
+
+  "env" : {
+    "es2022" : true,
+    "node" : true
+  },
+
+  "rules" : {
+    "no-var" : "warn",
+    "semi" : ["error", "always"]
+  }
+}
