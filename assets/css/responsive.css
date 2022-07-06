@@ -88,8 +88,12 @@ Author URI: http://www.bootstrapthemes.co
         bottom: 4%;
     }
 
-
-
+    .cont_skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 }
 
 
@@ -149,4 +153,3 @@ Author URI: http://www.bootstrapthemes.co
 
 
 }
-
