@@ -47,7 +47,6 @@ a span {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    /*    direction: rtl;*/
 }
 p {
     margin: 0 0 15px;
@@ -308,9 +307,7 @@ Separator
     margin:20px 0px;
     background: #5e9a28;
 }
-/*section:nth-of-type(odd) {
-    background-color: #F9F9F9;
-}*/
+
 /*
 Button
 */
@@ -331,8 +328,6 @@ Button
     background-color: #5e9a28;
     border-color: #5e9a28;
 }
-
-
 
 .btn {
     display: inline-block;
@@ -392,14 +387,6 @@ Button
     max-width:430px;
     height: 100px
 }
-
-
-
-
-
-/*.btn-default:active, .btn-default:hover  {
-    background: transparent;
-}*/
 
 
 /*
@@ -510,7 +497,7 @@ h1 span {
 
 /*home section*/
 .home{
-    background: url(../images/homebg.jpg) no-repeat 100% 100%;
+    background: url(../images/homebg.webp) no-repeat 100% 100%;
     background-size: cover;
     position: relative;
 }
@@ -680,7 +667,7 @@ h1 span {
 
 /*creativity section css*/
 .creativity{
-    background: url(../images/creativitybg.jpg) no-repeat top center;
+    background: url(../images/creativitybg.webp) no-repeat top center;
     background-size: cover;
 }
 .main_creativity{
@@ -778,7 +765,7 @@ h1 span {
 
 /*heretohelp section css*/
 .heretohelp{
-    background: url(../images/heretohelpbg.jpg) no-repeat top center;
+    background: url(../images/heretohelpbg.webp) no-repeat top center;
     background-size: cover;
 }
 
@@ -908,19 +895,6 @@ h1 span {
 }
 
 
-/*video section css*/
-
-.video{
-    background: url(../images/videobg.jpg) no-repeat top center;
-    background-size:cover;
-}
-.video .main_video{
-    padding: 220px 0px 160px 0px;
-    overflow: hidden;
-}
-.video .icon{}
-
-
 /*lessons section css*/
 .choose{}
 .owl-carousel .owl-item img{
@@ -946,11 +920,9 @@ h1 span {
 .choose .main_choose_content .single_choose_item .single_choose_text{}
 
 
-
-
 /*quote section css*/
 .quote{
-    background: url(../images/quotebg.jpg) no-repeat top center;
+    background: url(../images/quotebg.webp) no-repeat top center;
     background-size: cover;
 }
 
@@ -1002,7 +974,7 @@ h1 span {
 /*footer section*/
 .footer{
     background: #222222;
-
+    color: white;
 }
 
 .main_footer{
@@ -1014,6 +986,7 @@ h1 span {
     line-height: 25px;
     padding:40px;
     max-width: 100%;
+    margin-top: 45px;
 }
 .copyright_text p i{
     padding:0px 10px;
