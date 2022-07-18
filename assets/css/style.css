@@ -895,19 +895,6 @@ h1 span {
 }
 
 
-/*video section css*/
-
-.video{
-    background: url(../images/videobg.webp) no-repeat top center;
-    background-size:cover;
-}
-.video .main_video{
-    padding: 220px 0px 160px 0px;
-    overflow: hidden;
-}
-.video .icon{}
-
-
 /*lessons section css*/
 .choose{}
 .owl-carousel .owl-item img{
@@ -999,6 +986,7 @@ h1 span {
     line-height: 25px;
     padding:40px;
     max-width: 100%;
+    margin-top: 45px;
 }
 .copyright_text p i{
     padding:0px 10px;
