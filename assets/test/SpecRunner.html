@@ -7,6 +7,25 @@
   <link rel="shortcut icon" type="image/png" href="lib/jasmine-4.3.0/jasmine_favicon.png">
   <link rel="stylesheet" href="lib/jasmine-4.3.0/jasmine.css">
 
+  <link rel="stylesheet" href="../css/navmenu.css">
+  <link rel="stylesheet" href="../fonts/stylesheet.css">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+        <link rel="stylesheet" href="../css/jquery.fancybox.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/article.css">
+        <link rel="icon" href="../images/gd.ico">
+
+        <link rel="stylesheet" href="../css/plugins.css" />
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <link rel="stylesheet" href="../css/responsive.css" />
+
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!-- TEST -->
+
   <script src="lib/jasmine-4.3.0/jasmine.js"></script>
   <script src="lib/jasmine-4.3.0/jasmine-html.js"></script>
   <script src="lib/jasmine-4.3.0/boot0.js"></script>
@@ -23,6 +42,466 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+  <nav id="main-nav">
+      <ul>
+          <li><a href="#home"><span>Accueil</span></a></li>
+          <li><a href="#portfolio"><span>Portfolio</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+
+      </ul>
+      <a href="#" class="cd-close-menu">Close<span></span></a>
+  </nav>
+
+
+
+  <section id="home" class="home">
+      <div class="overlay">
+          <div class="container">
+              <div class="div-menu">
+                  <header class="cd-header">
+                      <a class="cd-menu-trigger" href="#main-nav"><span></span></a>
+                  </header>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 ">
+                      <div class="main_home_slider text-center">
+                          <div class="single_home_slider">
+                              <div class="main_home wow fadeInUp" data-wow-duration="700ms">
+                                  <h1>Guillaume David</h1>
+                                  <div class="whiseparator"></div>
+                                  <p class="subtitle">Développeur Front End / Javascript / React</p>
+
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+
+    <a class="mouse-scroll" href="#introduction">
+      <span class="mouse">
+        <span class="mouse-movement"></span>
+      </span>
+      <span class="mouse-message fadeIn">scroll</span>
+    </a>
+
+  </div>
+      </div>
+  </section>
+
+
+  <section id="introduction" class="introduction">
+      <div class="container">
+          <div class="row">
+              <div class="main_introduction sections">
+                  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+                      <h2>A PROPOS</h2>
+                      <div class="separator"></div>
+                      <p>Développeur web <strong>Front-End</strong> Freelance dans les Hauts-de-France (Lille), Spécialisé <strong>Javascript</strong> / <strong>React.js</strong> et dans l'intégration / développement responsive <strong>HTML</strong>/<strong>CSS</strong>/<strong>JS</strong>.
+                      Je vous accompagne dans le développement de votre projet web. Vous retrouverez ici mon portfolio et un moyen de me contacter.</p>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section id="creativity" class="creativity wow fadeIn">
+      <div class="creativity_overlay">
+          <div class="container">
+              <div class="row">
+                  <div class="main_creativity text-center">
+                      <a href="https://codepen.io/GuillaumeDAv" class="btn btn-larg" target="_blank">Créativité</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+      <div class="container">
+          <div class="row">
+              <div class="main_mix_content text-center sections">
+                  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+                      <h2>MON PORTFOLIO</h2>
+                      <div class="separator"></div>
+                  </div>
+                  <div class="main_mix_menu">
+                      <ul>
+                          <li class="filter" data-filter="all">All</li>
+                          <li class="filter" data-filter=".cat1">Front End</li>
+                          <li class="filter" data-filter=".cat2">Full Stack</li>
+                          <li class="filter" data-filter=".cat3">App Mobile</li>
+                      </ul>
+                  </div>
+
+                  <div id="mixcontent" class="mixcontent">
+
+                    <div class="col-sm-4 mix cat1 ">
+                        <div class="single_mixi_portfolio">
+                            <img src="../images/netflix.webp" alt="Clone Netflix React.js" />
+                            <div class="mixi_portfolio_overlay">
+                                <div class="overflow_hover_text">
+                                    <h2>Clone Netflix</h2>
+                                  <p><a class="link" href="https://github.com/GuillaumeDaviid/Netflix-Clone" target="_blank">Link</a></p>
+                                    <div class="separator2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 mix cat1 ">
+                        <div class="single_mixi_portfolio">
+                            <img src="../images/checkers.webp" alt="Jeu de dame" />
+                            <div class="mixi_portfolio_overlay">
+                                <div class="overflow_hover_text">
+                                    <h2>Jeu de Dame</h2>
+                                  <p><a class="link" href="https://guillaumedaviid.github.io/Checkers-Game/" target="_blank">checkers-game</a></p>
+                                    <div class="separator2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="col-sm-4 mix cat1 cat2">
+                          <div class="single_mixi_portfolio">
+                              <img src="../images/01academie.webp" alt="01academie logo" />
+                              <div class="mixi_portfolio_overlay">
+                                  <div class="overflow_hover_text">
+                                      <h2>01 Academie</h2>
+                                    <p><a class="link" href="https://www.01academie.com/" target="_blank">01academie.com</a></p>
+                                      <div class="separator2"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-4 mix cat1 cat2 ">
+                          <div class="single_mixi_portfolio">
+                              <img src="../images/01home.webp" alt="Front end - fullstack 01academie" />
+                              <div class="mixi_portfolio_overlay">
+                                  <div class="overflow_hover_text">
+                                      <h2>01 Academie</h2>
+                                      <p><a class="link" href="https://www.01academie.com/" target="_blank">01academie.com</a></p>
+                                      <div class="separator2"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4 mix cat1 cat1 cat2">
+                          <div class="single_mixi_portfolio">
+                              <img src="../images/01courses.webp" alt="Front end - fullstack 01academie" />
+                              <div class="mixi_portfolio_overlay">
+                                  <div class="overflow_hover_text">
+                                      <h2>01 Academie</h2>
+                                      <p><a class="link" href="https://www.01academie.com/" target="_blank">01academie.com</a></p>
+                                      <div class="separator2"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="gap"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<section>
+  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+      <h2>ARTICLES</h2>
+      <div class="separator"></div>
+      <div id="articles" class="articles">
+        <button id="previous"><</button>
+      <button id="next">></button>
+        <div id="list-article" class="list-article">
+      </div>
+      </div>
+  </div>
+</section>
+
+<!-- End of portfolio two Section -->
+
+
+
+  <section id="heretohelp" class="heretohelp">
+      <div class="creativity_overlay">
+          <div class="container">
+              <div class="row">
+                  <div class="main_creativity main_heretohelp text-center">
+                      <a href="https://guillaumedavid.com" class="btn btn-larg">Votre Projet</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <section id="clients" class="client">
+      <div class="container">
+          <div class="row">
+              <div class="main_client sections">
+                  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+                      <h2>COMPETENCES</h2>
+                      <div class="separator"></div>
+                  </div>
+                  <div class="cont_skills">
+
+                  <div>
+                  <div class="skills">HTML/CSS</div>
+                  <div class="skills">Sass / SCSS</div>
+                  <div class="skills">Typescript</div>
+                  <div class="skills">SQL</div>
+                  <div class="skills">NodeJS</div>
+                  <div class="skills">Wordpress</div>
+                </div>
+
+                <div>
+                  <div class="skills">Javascript</div>
+                  <div class="skills">React.JS</div>
+                  <div class="skills">PHP</div>
+                  <div class="skills">Python</div>
+                  <div class="skills">MySQL</div>
+                  <div class="skills">GitHub</div>
+                </div>
+
+              </div>
+
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section id="choose" class="choose">
+      <div class="container">
+          <div class="row">
+              <div class="main_choose_area sections">
+                  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+                      <h2>Pourquoi moi ?</h2>
+                      <div class="separator"></div>
+                      <p>Envie d'un nouveau site web ? Ou alors d'une refonte de celui-ci ? Vous cherchez un développeur qui répond à vos besoins sur-mesure et
+                      qui respect les délais et le budget ?</p>
+                  </div>
+                  <div class="main_choose_content margin-top-110">
+                      <div class="single_choose_content text-center">
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/app.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>Responsive Design</h5>
+                                      <p>Site web accessible sur mobile.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/app2.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>Responsive Layout</h5>
+                                      <p>Site web accessible sur tablette.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/makbook.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>React.js</h5>
+                                      <p>Vous avez un gros projet à venir ? React.js est utilisé par Facebook, Instagram, Twitter, Netflix ...</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="single_choose_content text-center">
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/app.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>App Mobile</h5>
+                                      <p>Création de vos applications mobile grace à React.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/app2.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>App Mobile</h5>
+                                      <p>Aussi disponible sur tablette.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                              <div class="single_choose_item">
+                                  <div class="single_choose_img">
+                                      <img src="assets/images/makbook.webp" alt="" />
+                                  </div>
+                                  <div class="single_choose_text">
+                                      <h5>Front End</h5>
+                                      <p>Votre site à besoin d'un lifting ? Contactez moi !</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <section id="quote" class="quote">
+      <div class="creativity_overlay">
+          <div class="container">
+              <div class="row">
+                  <div class="main_quote sections text-center">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+  <section id="contact" class="contact">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="contact_contant margin-top-120">
+                  <div class="head_title text-center wow fadeInUp" data-wow-duration="700ms">
+                      <h2>Demandez un Devis</h2>
+                      <div class="separator"></div>
+                      <p>Envie d'un nouveau site web ? Ou alors d'une refonte de celui-ci ? Vous cherchez un développeur qui répond à vos besoins sur-mesure et
+                      qui respect les délais et le budget ?
+                      Demandez un Devis ! </p>
+                  </div>
+
+                  <div class="main_contact_text_area margin-top-110">
+                      <div class="col-sm-4 no-padding wow fadeInUp" data-wow-duration="700ms">
+                          <div class="single_message_right_info">
+                              <h4>COORDONNEES</h4>
+                              <ul>
+                                  <li><a>Loos en Gohelle (62) - France</a></li>
+                                  <li><a>guillaumedaavidpro@gmail.com</a></li>
+                                  <li><a>Guillaume David</a></li>
+                              </ul>
+
+                              <div class="socail_bookmark margin-top-20">
+                                  <a href="https://www.linkedin.com/in/guillaume-david-5541271b9/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                  <a href="https://github.com/GuillaumeDaviid" target="_blank"><i class="fa fa-github" ></i></a>
+                                  <a href="https://guillaumedaavid.medium.com/" target="_blank"><i class="fa fa-medium" ></i></a>
+                                  <a href="https://twitter.com/GuigzD" target="_blank"><i class="fa fa-twitter" ></i></a>
+                              </div>
+
+                          </div>
+                      </div>
+
+                      <div class="col-sm-8  no-padding">
+                          <div class="single_contant_left wow fadeInRight">
+                              <form action="assets/php/recaptcha.php" id="formid" method="post">
+                                  <div class="row">
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <input type="text" class="form-control" name="user_name" placeholder="Nom" required="">
+                                          </div>
+                                      </div>
+                                      <div class="col-sm-6">
+                                          <div class="form-group">
+                                              <input type="email" class="form-control" name="user_mail" placeholder="Email" required="">
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group margin-top-80">
+                                      <textarea class="form-control" name="user_message" rows="1" placeholder="Message"></textarea>
+                                  </div>
+
+                                  <div class="text-right">
+                                      <input data-sitekey="6LfYwUEcAAAAAMDY20qhYUpD-D-ng45mPmV25S7M"
+                                      data-callback='onSubmit'
+                                      data-action='submit' type="submit" value="ENVOYER" class="btn g-recaptcha">
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+
+              </div> <!-- End of messsage contant-->
+          </div>
+      </div>
+  </section>
+
+
+
+
+
+  <footer id="footer" class="footer">
+      <div class="container">
+          <div class="main_footer text-center">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="footer_logo">
+                        <p>Vivre, apprendre et monter de niveau chaque jours</p>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <div class="copyright_text">
+                          <p class=" wow fadeInRight" data-wow-duration="1s">Made with <i class="fa fa-heart"></i> by <a href="http://bootstrapthemes.co">Bootstrap Themes</a>2022. All Rights Reserved</p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+
+  <!-- START SCROLL TO TOP  -->
+
+  <div class="scrollup">
+      <a href="#"><i class="fa fa-chevron-up"></i></a>
+  </div>
+
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("formid").submit();
+    }
+  </script>
+
+  <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="../js/vendor/bootstrap.min.js"></script>
+
+  <script src="../js/jquery.easypiechart.min.js"></script>
+  <script src="../js/jquery.mixitup.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/jquery.magnific-popup.js"></script>
+  <script src="../js/jquery.fancybox.pack.js"></script>
+  <script src="../js/articles.js"></script>
+
+
+
+
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+
 </body>
 </html>
