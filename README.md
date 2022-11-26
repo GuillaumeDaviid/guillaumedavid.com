@@ -1,4 +1,4 @@
 # guillaumedavid.com
 Personal website
 
-*Former version*
+*This is old version. The current version is available [here](https://github.com/GuillaumeDaviid/webSite-in-Gatsby/tree/main/webSite-in-Gatsby)*
